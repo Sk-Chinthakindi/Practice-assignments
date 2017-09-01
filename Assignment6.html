@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 6</title>
+    <style>
+        body {
+            text-align: center;
+        }
+
+    </style>
+
+    <script>
+        function changebg(select) {
+            var color = select.options[select.selectedIndex].textContent;
+
+            document.body.style.backgroundColor = color;
+        }
+
+        /* Adding interactivity to buttons */
+
+       
+
+        var P1 = 0;
+        var P2 = 0;
+        function btn1() {
+            var text = 0;
+            text = parseInt(document.getElementById("no").value);
+            P1 += text;
+            document.getElementById("score").innerHTML = P1 + " to " + P2;
+            
+        }
+        function btn2() {
+            text = parseInt(document.getElementById("no").value);
+            P2 += text;
+            document.getElementById("score").innerHTML = P1 + " to " + P2;
+            
+        }
+        
+        function reset(){
+            P1 = 0;
+            P2 = 0;
+            document.getElementById("score").innerHTML = P1 + " to " + P2;
+            
+            
+        }
+    </script>
+</head>
+
+<body>
+
+    <!-- Backgroung Color change -->
+    <select id="Color" onchange="changebg(this);">
+        <option></option>
+            <option>Green</option>
+            <option>SkyBlue</option>
+            <option>Orange</option>             
+    </select>
+
+    <!--Adding Interactivity to buttons-->
+
+    <h1 id="score"> 0 to 0 </h1>
+
+    <p> Playing to: 5</p>
+
+    <input type="number" id="no">
+
+    <button id=p1 onclick="btn1();"> Player One</button>
+
+    <button id=p2 onclick="btn2();"> Player Two</button>
+
+    <button id=reset onclick="reset()"> Reset</button>
+
+</body>
+
+</html>

@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 4</title>
+    
+    <script src="JavaScript/script.js" type="text/javascript"></script>
+        
+    <style>
+        
+        body{
+            position: relative;
+            height: 100;
+            margin: 0;
+            height: 150vh;
+        }
+    
+        #button{
+            
+            background-color: lightgreen;
+            width: 500px;
+            height: 200px;
+            border-radius: 15px;
+            color: white;
+            font-size: 50px;           
+        
+            
+        }
+        
+        #button:hover{
+            filter: opacity(60%);
+        }
+        
+    /*    Menu Bar  */    
+        
+        nav{
+            
+            width:30%;
+            float: left;
+        }
+        
+        li{
+            display: inline-block;
+            padding: 10px;
+            height: 25px;
+            background-color: coral;
+                        
+        }
+      
+        
+        li:hover{
+            background-color: darkgray;
+            
+        }
+        
+        
+/*
+        #menu_bar{
+            display: inline-block;
+            position: relative;
+        }
+*/
+        
+        
+/*
+        ul{
+            list-style: none;
+        }
+*/
+        
+        ul li{
+            display: block;
+            position: relative;
+            float: left;
+                    }
+        li ul{
+            display:none;
+            
+        }
+        
+        ul li ul li{
+            display: block;
+            position: relative;
+            float: left;
+        }
+        li ul li ul{
+            display: none;
+        }
+        
+        ul li a{
+            display: block;
+            text-decoration: none;
+            white-space: nowrap;
+            color: green;
+        }
+        
+        ul li a:hover{
+            background: yellow;
+        }
+        
+        
+         li:hover ul {
+             display: block; 
+             position: absolute;
+             margin: 0;
+             padding-top: 20px;
+             min-width: 160px;
+            
+             
+        }
+        li:hover li{
+            float: none;
+        }
+        
+        #sticky{
+            position: fixed;
+            width: 100%;
+            background-color: darkolivegreen;
+            color: white;
+            height: 20px;
+            padding: 50px;
+            bottom: 0;
+            left: 0;
+            text-align: center;
+ 
+        }
+        
+        #sticky:hover{
+            
+            background-color: darkseagreen;
+        }
+            
+       
+    </style>
+    
+    
+</head>
+
+<body>
+    <div>
+    <input type="button" id="button" value="Click">
+        </div>
+    <hr>
+  <div>   
+    <nav id="menu_bar">
+       
+    <ul>
+        <li>Web Design
+            
+            <ul>
+                <li><a href="#" >HTML</a>
+                
+<!--
+                <ul>
+                <li><a href="#" >HTML</a></li>               
+                <li><a href="#" >CSS</a> </li>
+                <li> <a href="#" >BOOT STRAP</a></li>
+            
+                    </ul>    
+                </li>               
+-->
+                <li><a href="#" >CSS</a> </li>
+                <li> <a href="#" >BOOT STRAP</a></li>
+            
+            </ul>
+        </li>
+         
+
+        <li> Scripting
+        <ul>
+                <li><a href="#" >Java Script</a></li>               
+                <li><a href="#" >Jquery</a> </li>
+                <li> <a href="#" >Anular js</a></li>
+            
+            </ul>
+        </li>
+        <li> Products</li>
+        
+        
+        
+        </ul>
+
+        
+    </nav>
+    </div><br><br><br><br>
+    <hr>
+    <div>
+    <p>
+    
+    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum
+    
+    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum
+    
+    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum
+    
+    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum
+    
+    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum
+    
+    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum</p></div>
+    
+    Farenheait: <input type="text" id="f"><br>
+    Celsuis : <input type="text" id="c" >
+    
+    
+
+    <footer id="sticky">
+    This a Stickey footer
+    </footer>
+    
+    
+    
+    
+</body>
+</html>

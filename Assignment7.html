@@ -1,0 +1,144 @@
+<html>
+<head>
+    <title>Assignment 7</title>
+</head>
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<!--
+    <script src="https://code.jquery.com/jquery-git.js"></script>
+    <script src="http://code.jquery.com/jquery-1.11.1.js"></script>
+-->
+<script>
+    $(document).ready(function() {
+        $("p").add("<span>This is the paragraph at the end of the body using append</span>").appendTo(document.body);
+    });
+</script>
+
+<script type="text/javascript">
+    $(function() {
+        $("table tr:nth-child(even)").addClass("striped");
+    });
+</script>
+<script>
+    $(document).ready(function() {
+        $("p:nth-of-type(2):last").click(function() {
+            $(this).fadeTo("slow", 0.50);
+        });
+    });
+</script>
+<script>
+    $(document).ready(function() {
+        $("p:nth-of-type(3)").dblclick(function() {
+            $("p:nth-of-type(3)").css({
+                "background": "red"
+            });
+
+        });
+    });
+</script>
+<script>
+    $(document).ready(function() {
+
+        $("div>h1").css("background", "yellow");
+
+    });
+</script>
+
+
+<style type="text/css">
+    body,
+    td {
+        font-size: 10pt;
+    }
+    
+    table {
+        background-color: white;
+        border: black;
+    }
+    
+    th {
+        border: 1px outset silver;
+        background-color: green;
+        color: white;
+    }
+    
+    tr {
+        background-color: white;
+        margin: 1px;
+    }
+    
+    tr.striped {
+        background-color: black;
+        color: white;
+    }
+    
+    td {
+        padding: 1px 8px;
+    }
+    
+    P:nth-of-type(2) {
+        color: darkgreen;
+        font-size: 25px;
+    }
+    
+    P:nth-of-type(3) {
+        background: green;
+        color: white;
+        font-size: 20px;
+    }
+    
+    p:nth-of-type(3).dbl {
+        background: black;
+        color: white;
+        font-size: 15px;
+    }
+</style>
+
+
+<body>
+    <table>
+        <tr>
+            <th>Language</th>
+            <th>version</th>
+        </tr>
+        <tr>
+            <td>JavaScript</td>
+            <td>1.0</td>
+        </tr>
+        <tr>
+            <td>Jquey</td>
+            <td>3.2.1</td>
+        </tr>
+        <tr>
+            <td>Angular Js</td>
+            <td>1.0</td>
+        </tr>
+        <tr>
+            <td>Json</td>
+            <td>1.0</td>
+        </tr>
+        <tr>
+            <td>Bootstrap</td>
+            <td>1.0</td>
+        </tr>
+    </table>
+    <hr>
+
+
+    <p>This is paragraph</p>
+
+    <p>click to see the jquery fade</p>
+    <p> Double click me to change color</p><hr>
+
+    <h1>abc</h1>
+
+    <div>
+
+        <h1>div-1</h1>
+
+        <h1>div-2</h1>
+
+    </div>
+
+    <h1>xyz</h1>
+</body>
+</html>
